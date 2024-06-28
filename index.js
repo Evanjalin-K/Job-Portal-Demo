@@ -618,12 +618,24 @@ app.get('/posts',(request,response) => {
 })
 
 app.post('/posts', (request, response) => {
-    response.json({
+
+  // pusing all the new item in the existing array of objects
+  
+    posts.push(
+      {
       ...request.body,
       id: posts.length + 1
-    });
+    }
+  );
+  response.json(
+    {
+      ...request.body,
+      id: posts.length
+
+    }
+  )
 })
-//3.run the server
+     //3.run the server
 
 app.listen(3001, () => {
     console.log('Server is running on http://localhost:3001')
