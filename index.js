@@ -8,7 +8,7 @@ const app = express();
 //4. Create a route
 
 app.get('/',(request,response) => {
-    response.send("Hello World");
+    response.send("Hello Node.js!");
 })
 
 //3.run the server
