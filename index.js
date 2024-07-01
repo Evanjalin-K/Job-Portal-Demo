@@ -1,13 +1,9 @@
 //1. import express module
-const express = require('express')
 const mongoose = require('mongoose')
 
-//2. create express app
+// imported app.js 
+const app = require('./app')
 
-const app = express();
-
- //5. Middleware
-app.use(express.json())
 
 //4. Create a route - creating database
 
@@ -30,6 +26,9 @@ mongoose.connect(`mongodb+srv://jojaev510:White05@cluster0.vq2ewgt.mongodb.net/`
 .catch((error) => {
   console.log(`Error connect to MongoDB`,error);
 });
+
+
+
 
 
 
