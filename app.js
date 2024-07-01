@@ -8,6 +8,8 @@ const app = express();
 
  app.use(express.json())
 
+ //define routes
+
  module.exports= app;
 
  //exporting the app to index.js

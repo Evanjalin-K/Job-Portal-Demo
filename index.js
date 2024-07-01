@@ -4,13 +4,16 @@ const mongoose = require('mongoose')
 // imported app.js 
 const app = require('./app')
 
+//importing dotenv and utils
+const { MONGODB_URL } = require('./utils/config')
+
 
 //4. Create a route - creating database
 
 console.log('Connecting to MongoDB......');
 
 // this is asynchronous function
-mongoose.connect(`mongodb+srv://jojaev510:White05@cluster0.vq2ewgt.mongodb.net/`)
+mongoose.connect(MONGODB_URL)
 
 
 .then(()=> {
