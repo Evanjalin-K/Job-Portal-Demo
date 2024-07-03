@@ -5,7 +5,9 @@ const mongoose = require('mongoose')
 const app = require('./app')
 
 //importing dotenv and utils
-const { MONGODB_URL } = require('./utils/config')
+const { MONGODB_URL, PORT } = require('./utils/config')
+
+// Importing PORT 
 
 
 //4. Create a route - creating database
@@ -20,8 +22,8 @@ mongoose.connect(MONGODB_URL)
   console.log(`connected to MongoDB`);
 
   //after connecting to MongoDB, start the server
-  app.listen(3001, () => {
-    console.log('Server is running on http://localhost:3001')
+  app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`)
 });
 
 })

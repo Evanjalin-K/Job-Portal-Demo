@@ -62,3 +62,70 @@ This is a backend application that provides a RESTful API example. The applicati
 }
 ```
 3. Run the application by running `npm run dev`
+
+## Features
+
+   - [ ] User registration
+   - [ ] User Login
+
+- [ ] Admin DashBoard
+      - [ ] Add a Company
+      - [ ] Update a Company
+      - [ ] Delete a company
+      - [ ] View all Companies
+      - [ ] View a Company
+      - [ ] Add a Job
+      - [ ] Update a Job
+      - [ ] Delete a Job
+      - [ ] View all Jobs
+      - [ ] View a Job
+      - [ ] View all users
+      - [ ] View a user
+      - [ ] Update a User
+      - [ ] Delete a User
+      - [ ] View all apllication
+   
+- [ ] User Dashboard
+    
+      - [ ] View all jobs
+      - [ ] View a Job
+      - [ ] Apply for a Job
+      - [ ] View all applied Job
+      - [ ] View a applied job
+      - [ ] View Profile
+      - [ ] Update Profile
+      - [ ] Delete Profile
+      - [ ] Logout
+
+- ## API Endpoints
+
+- [ ] POST /api/v1/users/register : Register a user
+- [ ] POST /api/v1/users/login : Login a user
+- [ ] GET /api/v1/users : Get all users
+- [ ] GET /api/v1/users/:id : Get a user
+- [ ] PUT /api/v1/users/:id : Update a user
+- [ ] DELETE /api/v1/users/:id : Delete a user
+- [ ] GET/api/v1/users/profile :    Get user profile
+- [ ] PUT /api/v1/users/pofile: Update User Profile
+- [ ] DELETE /api/v1/users/profile : Delete User profile
+- [ ] GET /api/v1/companies : Get all the companies
+- [ ] GET /api/v1/companies : Get all the companies/:id : Get a Company
+- [ ] POST /api/v1/companies : Add a company
+- [ ] PUT /api/v1/companies/:id : Update a Company
+- [ ] DELETE /api/v1/companies/:id : Delete a Company
+- [ ] GET /api/v1/jobs : Get all the jobs
+- [ ] GET /api/v1/jobs/:id : Get a job
+- [ ] POST /api/v1/jobs : Add a job
+- [ ] PUT /api/v1/jobs/:id : Update a job
+- [ ] DELETE /api/v1/jobs/:id : Delete a job
+- [ ] GET /api/v1/application : Get all the application
+ - [ ] GET /api/v1/application/:id : Get a application
+- [ ]  POST/api/v1/application : Add an application
+- [ ] GET /api/users/logout : Logout a user
+
+
+
+
+
+
+   
