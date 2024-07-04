@@ -66,7 +66,7 @@ This is a backend application that provides a RESTful API example. The applicati
 ## Features
 
    - [X] User registration
-   - [ ] User Login
+   - [x] User Login
 
 - [ ] Admin DashBoard
       - [ ] Add a Company
@@ -124,6 +124,14 @@ This is a backend application that provides a RESTful API example. The applicati
 - [ ] GET /api/users/logout : Logout a user
 
 
+Packages:
+
+   - npm init
+   - npm install mongoose - to connect database with MongoDB
+   - npm express - to set up a server
+   - npm install env - to hide the credentials
+   - npm install bcrypt - to hash the password, to encrypt the password
+   - npm install jwt - to add a token
 
 
 

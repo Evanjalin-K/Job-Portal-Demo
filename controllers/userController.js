@@ -2,6 +2,9 @@
 const User = require('../models/user')
 const mongoose = require('mongoose')
 const bcrypt = require('bcrypt')
+const jwt = require ('jsonwebtoken')
+const { SECRET_KEY } = require('../utils/config')
+
 const userController = {
 
     getAllUsers: async(req, res) => {
@@ -111,8 +114,21 @@ const userController = {
             {
                 return res.status(400).send({ message:'Invalid Password'})
             }
+            // Token Generation
+            // generate a token, here we can add expireIN also {expiresIn: '1h'}
 
-            res.status(200).send({message:'Login Successful'})
+            const token = jwt.sign({_id: user._id}, SECRET_KEY);
+
+            // Set a Cookie with the token, stored the cookiee by using the details below (httpOnly Cookies - very secured)
+            // What is cookies
+            res.cookie('token', token, {
+                httpOnly: true,
+                secure: true,
+                sameSite: 'none',
+                expires: new Date(Date.now() + 24 * 3600000) // 24 hours from login
+            });
+
+            res.status(200).json({message:'Login Successful'})
             
         } catch (error) {
             res.status(500).send({message: error.message})
