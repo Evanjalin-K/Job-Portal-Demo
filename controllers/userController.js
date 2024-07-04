@@ -133,6 +133,19 @@ const userController = {
         } catch (error) {
             res.status(500).send({message: error.message})
         }
+      },
+      logout: async (req, res) =>{
+        try {
+            //clear cookies
+            res.clearCookies('token');
+
+            res.status(200).send({ message: 'Logged out successfully'})
+            
+        } catch (error) {
+
+            res.status(500).send({ message: error.message })
+            
+        }
       }
     }      
 module.exports = userController;
