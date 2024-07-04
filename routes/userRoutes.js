@@ -8,7 +8,6 @@ userRouter.post('/', userController.register);
 //url params
 userRouter.get('/:id', userController.getUserById); 
 
-//query params
-
+userRouter.post('/login', userController.login)
 
 module.exports = userRouter;

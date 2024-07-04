@@ -65,7 +65,7 @@ This is a backend application that provides a RESTful API example. The applicati
 
 ## Features
 
-   - [ ] User registration
+   - [X] User registration
    - [ ] User Login
 
 - [ ] Admin DashBoard
@@ -79,8 +79,8 @@ This is a backend application that provides a RESTful API example. The applicati
       - [ ] Delete a Job
       - [ ] View all Jobs
       - [ ] View a Job
-      - [ ] View all users
-      - [ ] View a user
+      - [x] View all users 
+      - [x] View a user by query and params
       - [ ] Update a User
       - [ ] Delete a User
       - [ ] View all apllication
