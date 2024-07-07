@@ -95,7 +95,7 @@ This is a backend application that provides a RESTful API example. The applicati
       - [ ] View Profile
       - [ ] Update Profile
       - [ ] Delete Profile
-      - [ ] Logout
+      - [x] Logout
 
 - ## API Endpoints
 

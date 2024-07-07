@@ -137,7 +137,7 @@ const userController = {
       logout: async (req, res) =>{
         try {
             //clear cookies
-            res.clearCookies('token');
+            res.clearCookie('token');
 
             res.status(200).send({ message: 'Logged out successfully'})
             
